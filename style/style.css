@@ -1,18 +1,23 @@
-
+@font-face {
+    font-family:"Gloss-and-bloom" ;
+    src: url(font/Gloss_And_Bloom.ttf);
+}
+@font-face {
+    font-family: "Myriand";
+    src: url(font/MyriadPro-BlackSemiCn.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--texto);
+    font-family: "Myriad";
+
 }
 /*COLORES*/
 :root{
     --fondo:#1f1f1f ;
     --remarcado:#33ff00;
     --palabras:#fff ;
-}
-:root{
-    --texto:'Asap Condensed', sans-serif;
 }
 /*FONDO COLOR NEGRO*/
 .degrades{
@@ -75,7 +80,7 @@ body{
     margin-left: 2rem;
     width: 5rem;
     height: 4rem;
-    animation: rotate 5s infinite;
+    animation: rotate 8s infinite;
     transition: all 2s ease-out;
 }
 @keyframes rotate {
@@ -84,27 +89,37 @@ body{
 .left{
     margin-left: 2rem;
     font-style: italic;
+    font-family: "Gloss-and-bloom";
+    
 }
 /*PRIMER GALERIA*/
 .contenedor{
-    height: 25rem;
-    flex-wrap: wrap;
-    display: flex;
+    height: 20rem;
     margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .imagen1{
-    height: 15rem;
-    width: 18rem;
+    height: 12rem;
+    width: 15rem;
 }
 
 .elemento{
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    width: 40rem;
 }
-.imagen2{
-    height: 10rem;
-    width: 18rem;
+.ancho{
+    width: 31rem;
+}
+.nosotros p{
+    color: var(--palabras);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 /*CANCIONES / SEGUNDO MENU DE IMAGENES*/
 
@@ -154,6 +169,7 @@ body{
 
 }
 .formulario{
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -163,6 +179,8 @@ body{
     display: flex;
     flex-direction: column;
     width: 20rem;
+    margin-top: 1rem;
+
 }
 .boton{
     height: 2rem;
@@ -178,10 +196,15 @@ body{
     width: 10rem;
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:450px) {
 
     /*ENCABEZADO*/
-    .
+    .titulo{
+        margin-bottom: 2rem;
+    }
+    .titulo_big{
+        margin-left:3rem;
+    }
     /*TITULO PRINCIPAL*/
 
 
@@ -190,8 +213,29 @@ body{
     /*PRIMER GALERIA*/
     
     /*SEGUNDA GALERIA*/
- 
+    .contenedor {
+        display: flex;
+        justify-content: center;
+    }
+    .elemento{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ancho{
+        width: 15rem;
+    }
     
+    .titulo-two{
+        margin-top: 24rem;
+    }
+    .imagen1:hover{
+        border-radius: 2rem;
+        transition: all 1s ease-out;
+    }
 
 /*FORMULARIO*/
 
+}
