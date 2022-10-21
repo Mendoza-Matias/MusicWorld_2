@@ -1,0 +1,197 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--texto);
+}
+/*COLORES*/
+:root{
+    --fondo:#1f1f1f ;
+    --remarcado:#33ff00;
+    --palabras:#fff ;
+}
+:root{
+    --texto:'Asap Condensed', sans-serif;
+}
+/*FONDO COLOR NEGRO*/
+.degrades{
+    background-image: linear-gradient(to left,rgb(26, 25, 25),black);
+}
+body{
+    background: var(--fondo);
+}
+/*LETRAS VERDES */
+.green{
+    color: var(--remarcado);
+    text-transform: uppercase;
+}
+/*IMAGEN DE FONDO*/
+.encabezado{
+    background-image: url(encabezado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--palabras);
+    text-shadow: 0px 10px 10px black;
+    box-shadow: 5px 1px 2px white;
+}
+.titulo_big{
+    margin-left: 5rem;
+}
+/*NAVEGACION*/
+.navegacion ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+.navegacion a{
+    color: var(--palabras);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.navegacion a:hover{
+    color: var(--remarcado);
+}
+/*TITULOS*/
+.titulo{
+    color: var(--palabras);
+    margin-left: 1rem;
+}
+.vinilo{
+    background-image: url(vinilo.png);
+    background-size: cover;
+    background-position: right;
+    margin-left: 2rem;
+    width: 5rem;
+    height: 4rem;
+    animation: rotate 5s infinite;
+    transition: all 2s ease-out;
+}
+@keyframes rotate {
+    100%{transform: rotate(360deg);}
+}
+.left{
+    margin-left: 2rem;
+    font-style: italic;
+}
+/*PRIMER GALERIA*/
+.contenedor{
+    height: 25rem;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 15rem;
+    justify-content: center;
+}
+.imagen1{
+    height: 15rem;
+    width: 18rem;
+}
+
+.elemento{
+    display: flex;
+    gap: 1rem;
+}
+.imagen2{
+    height: 10rem;
+    width: 18rem;
+}
+/*CANCIONES / SEGUNDO MENU DE IMAGENES*/
+
+.titulo-two{
+    height: 5rem;
+    text-align: center;
+    margin-top: 15rem;
+    color: var(--palabras);
+    text-transform: uppercase;
+}
+.contenedor-two{
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.efecto:hover{
+    box-shadow: 0px 0px 10px var(--remarcado);
+    transition: all 1s ease-out;
+}
+.opacidad:hover{
+    opacity: 0.5;
+}
+.img-elm1,
+.img-elm2,
+.img-elm3,
+.img-elm4{
+    height: 22rem;
+    width: 18rem;
+    filter: grayscale(100%);
+}
+
+/*PIE DE LA PAGINA*/
+.pie{
+    background-image: linear-gradient(to top,var(--fondo),black);
+    display: flex;
+    margin: auto;
+    height: 15rem;
+    color: var(--palabras);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inputs{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+.boton{
+    height: 2rem;
+    width: 5rem;
+    background: var(--fondo);
+    color: var(--remarcado);
+    border:1px solid var(--remarcado);
+}
+
+.developer{
+    margin-left: 0.5rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+@media screen and (max-width:430px) {
+
+    /*ENCABEZADO*/
+    .
+    /*TITULO PRINCIPAL*/
+
+
+
+    
+    /*PRIMER GALERIA*/
+    
+    /*SEGUNDA GALERIA*/
+ 
+    
+
+/*FORMULARIO*/
+
