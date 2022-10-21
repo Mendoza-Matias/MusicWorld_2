@@ -2,10 +2,7 @@
     font-family:"Gloss-and-bloom" ;
     src: url(font/Gloss_And_Bloom.ttf);
 }
-@font-face {
-    font-family: "Myriand";
-    src: url(font/MyriadPro-BlackSemiCn.otf);
-}
+
 *{
     margin: 0;
     padding: 0;
